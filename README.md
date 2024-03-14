@@ -103,7 +103,7 @@ The dataset folders for Synapse should be organized as follows:
 Please refer to [Setting up the datasets](https://github.com/282857341/nnFormer) on nnFormer repository for more details.
 Alternatively, you can download the preprocessed dataset for [Synapse](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/abdelrahman_youssief_mbzuai_ac_ae/EbHDhSjkQW5Ak9SMPnGCyb8BOID98wdg3uUvQ0eNvTZ8RA?e=YVhfdg), [Decathlon-Lung](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/abdelrahman_youssief_mbzuai_ac_ae/EWhU1T7c-mNKgkS2PQjFwP0B810LCiX3D2CvCES2pHDVSg?e=OqcIW3), [BRaTs](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/abdelrahman_youssief_mbzuai_ac_ae/EaQOxpD2yE5Btl-UEBAbQa0BYFBCL4J2Ph-VF_sqZlBPSQ?e=DFY41h), and extract it under the project directory.
 
-### 2.Data splitting and Preprocessing
+#### 2.Data splitting and Preprocessing
 You can refer to [nnFormer](https://github.com/282857341/nnFormer) for data splitting and preprocessing
 
 #### 3. Training and Testing
@@ -115,7 +115,9 @@ bash training_scripts/run_training_lung.sh
 bash training_scripts/run_training_tumor.sh
 ```
 To reproduce the results of 3D ConvNet++:
+
 1- Download [Synapse weights](https://drive.google.com/file/d/13JuLMeDQRR_a3c3tr2V2oav6I29) and paste ```model_final_checkpoint.model``` in the following path:
+
 ```shell
 unetr_pp/evaluation/unetr_pp_synapse_checkpoint/unetr_pp/3d_fullres/Task002_Synapse/unetr_pp_trainer_synapse__unetr_pp_Plansv2.1/fold_0/
 ```
